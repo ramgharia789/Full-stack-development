@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>HTML Forms and Input Tags Example</title>
+</head>
+<body>
+  <h1>HTML Forms and Input Tags Example</h1>
+
+  <!-- A form with two text fields and one submit button -->
+  <form action="/action_page.php" method="get">
+    <label for="fname">First name:</label>
+    <input type="text" id="fname" name="fname"><br><br>
+    <label for="lname">Last name:</label>
+    <input type="text" id="lname" name="lname"><br><br>
+    <input type="submit" value="Submit">
+  </form>
+
+  <!-- A form with radio buttons -->
+  <form action="/action_page.php" method="get">
+    <p>Choose your favorite color:</p>
+    <input type="radio" id="red" name="color" value="red">
+    <label for="red">Red</label><br>
+    <input type="radio" id="green" name="color" value="green">
+    <label for="green">Green</label><br>
+    <input type="radio" id="blue" name="color" value="blue">
+    <label for="blue">Blue</label><br><br>
+    <input type="submit" value="Submit">
+  </form>
+
+  <!-- A form with checkboxes -->
+  <form action="/action_page.php" method="get">
+    <p>Select your hobbies:</p>
+    <input type="checkbox" id="reading" name="hobby" value="reading">
+    <label for="reading">Reading</label><br>
+    <input type="checkbox" id="writing" name="hobby" value="writing">
+    <label for="writing">Writing</label><br>
+    <input type="checkbox" id="coding" name="hobby" value="coding">
+    <label for="coding">Coding</label><br><br>
+    <input type="submit" value="Submit">
+  </form>
+
+  <!-- A form with a file upload button -->
+  <form action="/action_page.php" method="post" enctype="multipart/form-data">
+    <p>Select a file to upload:</p>
+    <input type="file" id="file" name="file"><br><br>
+    <input type="submit" value="Upload File">
+  </form>
+
+  <!-- A form with a dropdown list -->
+  <form action="/action_page.php" method="get">
+    <p>Select your country:</p>
+    <select id="country" name="country">
+      <option value="">--Please choose an option--</option>
+      <option value="india">India</option>
+      <option value="australia">Australia</option>
+      <option value="usa">USA</option>
+      <option value="uk">UK</option>
+      <option value="china">China</option>
+    </select><br><br>
+    <input type="submit" value="Submit">
+  </form>
+
+  <!-- A form with a textarea -->
+  <form action="/action_page.php" method= "post">
+    <p>Write something about yourself:</p>
+    <textarea id= "bio"name= "bio"></textarea><br><br>
+    <input type= "submit"value= "Submit">
+  </form>
+
+  <!-- A form with a password field -->
+  <form action="/action_page.php" method= "post">
+    <p>Enter your password:</p>
+    <input type= "password"id= "pwd"name= "pwd"><br><br>
+    <input type= "submit"value= "Submit">
+  </form>
+
+</body>
+</html>
+
+
+
+
+<!-- Form Tags:
+
+<form> - Defines a form container for input elements.
+
+<input> - Represents an input field, such as text, password, checkbox, radio button, etc.
+
+<textarea> - Defines a multiline text input field.
+
+<select> - Creates a dropdown menu for selecting options.
+
+<button> - Defines a clickable button within a form.
+
+<label> - Defines a label for an <input> element to improve accessibility.
+
+<fieldset> - Groups related form elements together and creates a visual container with a border.
+
+<legend> - Provides a caption for a <fieldset>.
+
+Input Types:
+
+<input type="text"> - Single-line text input.
+<input type="password"> - Password input (characters are hidden).
+<input type="email"> - Email input with built-in validation.
+<input type="number"> - Numeric input.
+<input type="checkbox"> - Checkbox input for binary choices.
+<input type="radio"> - Radio button input for selecting one option from a group.
+<input type="date"> - Date input.
+<input type="time"> - Time input.
+<input type="file"> - File upload input.
+<input type="submit"> - Submit button for form submission.
+<input type="reset"> - Reset button to clear form inputs.
+<input type="hidden"> - Hidden input (not displayed but can hold data).
+<input type="color"> - Color picker input.
+<input type="range"> - Range slider input.
+<input type="search"> - Search input.
+<input type="tel"> - Telephone number input.
+<input type="url"> - URL input with built-in validation. -->
