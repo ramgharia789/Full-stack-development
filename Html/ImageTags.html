@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- The title that appears in the browser tab -->
+    <title>This is a program</title>
+</head>
+<body>
+    <!-- Level 1 heading for the main title of the page -->
+    <h1>This is a program</h1>
+
+    <!-- Paragraph indicating the display of a local image with alternative text -->
+    <p>Displaying a local image with an alternative text</p>
+    
+    <!-- Displaying a local image with an alternative text -->
+    <img src="Media/cat.jpg" alt="This is an image">
+
+    <!-- Paragraph indicating the display of a local image with specified dimensions and alternative text -->
+    <p>Displaying a local image with specified dimensions and alternative text</p>
+    
+    <!-- Displaying the same local image with specified dimensions and alternative text -->
+    <img src="Media/cat.jpg" alt="this is an image" height="300" width="300">
+
+    <!-- Displaying a local image with a caption -->
+    <figure>
+        <!-- Displaying the same local image with specified dimensions and alternative text -->
+        <img src="Media/cat.jpg" alt="this is an image" height="300" width="300">
+        <!-- Display the caption under the image using figcaption tag -->
+        <figcaption> This is a cute cat picture</figcaption>
+    </figure>
+
+    <!-- A paragraph with text and an image from an external source -->
+    <p>This is Image Tags program
+        <!-- Displaying an external image with specified dimensions and alternative text -->
+        <img src="https://www.w3schools.com/images/lamp.jpg" alt="this is an image" height="30" width="30">
+        This is an image rendered from the internet
+    </p>
+
+    <!-- Displaying an image with an image map -->
+    <img src="Media/image.jpg" alt="this is a laptop, mobile, and tablet" usemap="#imageMap" height="211" width="400">
+
+    <!-- Define the image map with clickable areas -->
+    <map name="imageMap">
+        <!-- Define a clickable area for the tablet part of the image -->
+        <area shape="rect" coords="35,80,105,170" href="https://www.google.com/search?q=tablet&tbm=isch&ved=2ahUKEwj4lNvuvJqBAxXGmWMGHa2JDycQ2-cCegQIABAA&oq=tablet&gs_lcp=CgNpbWcQAzIECCMQJzIHCAAQigUQQzIFCAAQgAQyBwgAEIoFEEMyBwgAEIoFEEMyBwgAEIoFEEMyCAgAEIAEELEDMgUIABCABDIHCAAQigUQQzIFCAAQgARQ2BBY2BBg1RhoAHAAeACAAaQBiAGpApIBAzAuMpgBAKABAaoBC2d3cy13aXotaW1nwAEB&sclient=img&ei=Hsv6ZPiNEcazjuMPrZO-uAI&bih=671&biw=1323">
+        
+        <!-- Define a clickable area for the laptop part of the image -->
+        <area shape="rect" coords="135,60,310,172" href="https://www.google.com/search?q=laptop&tbm=isch&ved=2ahUKEwi61MfyvJqBAxXS5zgGHd4TDuMQ2-cCegQIABAA&oq=lap&gs_lcp=CgNpbWcQARgAMgoIABCKBRCxAxBDMgoIABCKBRCxAxBDMggIABCABBCxAzIICAAQgAQQsQMyBwgAEIoFEEMyBwgAEIoFEEMyBwgAEIoFEEMyCggAEIoFELEDEEMyCAgAEIAEELEDMggIABCABBCxAzoECCMQJzoFCAAQgAQ6CwgAEIAEELEDEIMBUM4JWPIRYNoZaABwAHgAgAGeAYgB4ASSAQMwLjSYAQCgAQGqAQtnd3Mtd2l6LWltZ8ABAQ&sclient=img&ei=Jsv6ZLqpFdLP4-EP3qe4mA4&bih=671&biw=1323">
+        
+        <!-- Define a clickable area for the phone part of the image -->
+        <area shape="rect" coords="320, 110,350,172" href="https://www.google.com/search?sca_esv=563635297&sxsrf=AB5stBhrm8YXjjZavbFwGjSsq_7KVmcCZQ:1694157657929&q=phone&tbm=isch&source=lnms&sa=X&ved=2ahUKEwjcrZOLvZqBAxUQfGwGHQ2nDDYQ0pQJegQIDxAB&biw=1323&bih=671&dpr=1">
+    </map>
+
+<p>Define the group of images with resize the wimdow to load differnt images</p>
+    <!-- Define the group of images with resize the wimdow to load differnt images-->
+    <picture>
+        <!-- The first source element specifies an image source for viewport widths of 350px or more -->
+        <source media="(min-width:650px)" srcset="Media/bat3.jpg">
+        
+        <!-- The second source element specifies an image source for viewport widths of 650px or more -->
+        <source media="(min-width:470px)" srcset="Media/bat2.jpg"> 
+        
+        <!-- The <img> element serves as a fallback for browsers that do not support the <picture> element or its sources -->
+        <img src="Media/bat1.jpg" alt="Bat Signature" style="width:auto;">
+    </picture>
+    
+
+</body>
+</html>

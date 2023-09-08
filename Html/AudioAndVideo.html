@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- The title that appears in the browser tab -->
+    <title>This is a program</title>
+</head>
+<body>
+    <!-- Audio Element with Controls -->
+    <audio controls>
+        <!-- Specify the audio source and type -->
+        <source src="Media/Laila Ringtone.mp3" type="audio/mp3">
+        <!-- Displayed if the browser doesn't support the audio format -->
+        Media does not support
+    </audio>
+
+    <!-- Video Element with Controls -->
+    <video width="216" height="384" controls>
+        <!-- Specify the video source and type -->
+        <source src="Media/VID-20230430-WA0000.mp4" type="video/mp4">
+        <!-- Displayed if the browser doesn't support the video format -->
+        Media does not support
+    </video>
+
+    <!-- Video Element with Controls and Subtitles -->
+    <video width="216" height="384" controls>
+        <!-- Specify the video source and type -->
+        <source src="Media/VID-20230430-WA0000.mp4" type="video/mp4">
+        <!-- Provide subtitles with the track element -->
+        <track src="filename.srt" kind="subtitles" srclang="en" label="English">
+        <!-- Displayed if the browser doesn't support the video format or subtitles -->
+        Media does not support
+    </video>
+</body>
+</html>
