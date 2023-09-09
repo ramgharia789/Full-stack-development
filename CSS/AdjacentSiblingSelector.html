@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adjacent Sibling Selector Example</title>
+    <style>
+        /* Define CSS styles using the adjacent sibling selector */
+        h2 + p {
+            font-style: italic;
+            color: blue;
+        }
+    </style>
+</head>
+<body>
+    <h2>Heading 1</h2>
+    <p>This is a paragraph directly following Heading 1. It will be styled.</p>
+    
+    <h1>Heading 2</h1>
+    <p>This is another paragraph following Heading 2, but it won't be styled.</p>
+    
+    <h2>Heading 3</h2>
+    <p>This is a paragraph directly following Heading 3. It will be styled as well.</p>
+</body>
+</html>

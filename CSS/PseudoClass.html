@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- The title of the web page -->
+    <title>Pseudo class</title>
+    <!-- The style of the web page -->
+    <style>
+        /* Select all li elements inside header elements */
+        header li{
+            /* Remove the bullet points from the list */
+            list-style: none;
+        }
+        /* Select all a elements that are either unvisited or visited */
+        a:link, a:visited{
+            /* Remove the underline from the links */
+            text-decoration: none;
+            /* Set the text color to black */
+            color: black;
+            /* Set the background color to gray */
+            background-color: gray;
+            /* Display the links as blocks */
+            display: block;
+            /* Set the width of the links to 300 pixels */
+            width: 300px;
+            /* Add some space below the links */
+            margin-bottom: 5px;
+            /* Add a black border around the links */
+            border: 1px solid black;
+            /* Center the text inside the links */
+            text-align: center;
+        }
+        /* Select all a elements that are either hovered or active */
+        a:hover, a:active{
+            /* Set the background color to black */
+            background-color: black;
+            /* Set the text color to aliceblue */
+            color: aliceblue;
+        }
+        /* Select the third li element inside header elements */
+        header li:nth-child(3){
+            /* Set the font family to Arial, Helvetica, sans-serif */
+            font-family: Arial, Helvetica, sans-serif;
+            /* Set the text color to brown */
+            color: brown;
+            /* Set the font size to 24 pixels */
+            font-size: 24px;
+        }
+        /* Select all odd-numbered div elements inside section elements */
+        section div:nth-child(odd){
+            /* Set the background color to blueviolet */
+            background-color: blueviolet;
+            /* Change the cursor shape to pointer when hovering over the divs */
+            cursor: pointer;
+        }
+        /* Select all odd-numbered div elements inside section elements that are hovered */
+        section div:nth-child(odd):hover{
+            /* Set the background color to aqua */
+            background-color: aqua;
+        }
+        /* Select the sixth div element inside section elements that is hovered */
+        section div:nth-child(6):hover{
+            /* Set the background color to lightblue */
+            background-color: lightblue;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- The header of the web page -->
+    <header>
+        <!-- The main title of the web page -->
+        <h1>Pseudo class</h1>
+        <!-- A list of links -->
+        <ul>
+            <!-- A link to the home page -->
+            <li><a href="/">Home</a></li>
+            <!-- A link to Google's email service -->
+            <li><a href="http://www.gmail.com" target="_blank">google</a></li>
+            <!-- A link to Yahoo's website -->
+            <li><a href="http://www.yahoo.com" target="_blank">yahoo</a></li>
+        </ul>
+    </header>
+    <!-- The main content of the web page -->
+    <section>
+        <!-- A div element with some text -->
+        <div>DIV 1</div>
+        <!-- A div element with some text -->
+        <div>DIV 2</div>
+        <!-- A div element with some text -->
+        <div>DIV 3</div>
+        <!-- A div element with some text -->
+        <div>DIV 4</div>
+        <!-- A div element with some text -->
+        <div>DIV 5</div>
+        <!-- A div element with some text -->
+        <div>DIV 6</div>
+        <!-- A div element with some text -->
+        <div>DIV 7</div>
+        <!-- A div element with some text -->
+        <div>DIV 8</div>
+        <!-- A div element with some text -->
+        <div>DIV 9</div>
+        <!-- A div element with some text -->
+        <div>DIV 10</div>
+        <!-- A div element with some text -->
+        <div>DIV 11</div>
+        <!-- A div element with some text -->
+        <div>DIV 12</div>
+    </section>
+</body>
+
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <!-- Define the character encoding and viewport settings -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Child Selector</title>
+    <style>
+        /* Apply styles to <article> elements directly inside a <section> element */
+        section > article {
+            font-style: italic;
+            color: brown;
+        }
+
+        /* Apply styles to <h2> elements directly inside a <section> element */
+        section > h2 {
+            font-style: italic;
+            color: red;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Child Selector</h1>
+    <!-- First <section> element with nested <h2>, <div>, and <article> elements -->
+    <section>
+        <h2>Subheading 1</h2>
+        <div>
+            <!-- <article> element inside a <div> within the first <section> -->
+            <article>ARTICLE which is inside DIV, which is inside SECTION</article>
+        </div>
+    </section>
+    <!-- Second <section> element with a direct child <article> element -->
+    <section>
+        <article>ARTICLE as a direct child of the SECTION element.</article>
+    </section>
+    <!-- <h2> element outside of any <section> -->
+    <h2>Subheading 2</h2>
+</body>
+
+</html>

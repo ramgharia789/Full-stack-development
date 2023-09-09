@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <!-- Define the character encoding and viewport settings -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Class Selector</title>
+    <style>
+        /* Define a class selector "highlight" to set a gray background */
+        .highlight {
+            background-color: gray;
+        }
+
+        /* Define a class selector "highlight" for <p> elements to make text italic */
+        p.highlight {
+            font-style: italic;
+        }
+
+        /* Define a class selector "highlight midpoint" to set text color to red and background color to blue */
+        .highlight.midpoint {
+            color: red;
+            background-color: blue;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- The main heading with the "highlight" class -->
+    <h1 class="highlight">Class Selector</h1>
+    <!-- A paragraph explaining CSS -->
+    <p>CSS is a stylesheet language used to define the visual presentation of web pages
+        written in HTML or XML. It enables web developers to control the layout, colors,
+        fonts, and overall design of web content.
+    </p>
+    <!-- A paragraph with the "highlight" class to make text italic -->
+    <p class="highlight">This is a paragraph element with the class "highlight."</p>
+    <!-- A <div> element with both "highlight" and "midpoint" classes -->
+    <div class="highlight midpoint">This is a main point in the article, which has both the "highlight" and "midpoint" classes.</div>
+</body>
+
+</html>

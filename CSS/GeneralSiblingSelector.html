@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adjacent Sibling Selector Example</title>
+    <style>
+        /* Define CSS styles using the adjacent sibling selector */
+        li~.highlight {
+            font-style: italic;
+            color: blue;
+        }
+        li:first-child~.name {
+            font-style: normal;
+            color: green;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <p>Shopping list</p>
+        <ul>
+            <li>Coffee</li>
+            <li class="highlight">Tea</li>
+            <li class="name">Milk</li>
+        </ul>
+    </div>
+</body>
+
+</html>

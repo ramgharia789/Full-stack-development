@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <!-- Define the character encoding and viewport settings -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Descendant Selector</title>
+    <style>
+        /* Apply styles to <li> elements that are descendants of a <section> element */
+        section li {
+            font-style: italic;
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <h1>Descendant Selector</h1>
+    <!-- First <section> element with a nested <ul> and <li> elements -->
+    <section>
+        Table Content:
+        <ul>
+            <!-- <li> elements within the first <section> are styled by the CSS rule -->
+            <li>Article 1</li>
+            <li>Article 2</li>
+            <li>Article 3</li>
+        </ul>
+    </section>
+    <!-- <article> element with a nested <ul> and <li> elements -->
+    <article>
+        Shopping List
+        <ul>
+            <!-- <li> elements within the <article> are not styled by the CSS rule -->
+            <li>coffee</li>
+            <li>tea</li>
+            <li>milk</li>
+        </ul>
+    </article>
+</body>
+</html>
