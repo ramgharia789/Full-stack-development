@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Table Tags</title>
+</head>
+<body>
+    <h1>HTML Table Tags</h1>
+    <p>HTML provides several table-related tags to create structured and organized data tables.</p>
+
+    <!-- Basic Table Structure -->
+    <h2>Basic Table Structure</h2>
+    <table border="1px solid Black">
+        <caption>Basic Table</caption> <!-- Provides a title for the table -->
+        <thead>
+            <tr>
+                <th>Header 1</th> <!-- Table header cell -->
+                <th>Header 2</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Data 1</td> <!-- Table data cell -->
+                <td>Data 2</td>
+            </tr>
+            <tr>
+                <td>Data 3</td>
+                <td>Data 4</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <!-- Table Header, Body, and Footer -->
+    <h2>Table Header, Body, and Footer</h2>
+    <table border="1px solid Black">
+        <caption>Table with Header, Body, and Footer</caption>
+        <thead>
+            <tr>
+                <th>Header 1</th>
+                <th>Header 2</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Data 1</td>
+                <td>Data 2</td>
+            </tr>
+            <tr>
+                <td>Data 3</td>
+                <td>Data 4</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td>Total 1</td>
+                <td>Total 2</td>
+            </tr>
+        </tfoot>
+    </table>
+
+    <!-- Table Cell Spanning -->
+    <h2>Table Cell Spanning</h2>
+    <table border="1px solid Black">
+        <caption>Table with Cell Spanning</caption>
+        <tr>
+            <td rowspan="2">Row 1, Cell 1</td> <!-- Rowspan spans 2 rows -->
+            <td colspan="2">Row 1, Cell 2 and Cell 3</td> <!-- Colspan spans 2 columns -->
+        </tr>
+        <tr>
+            <td>Row 2, Cell 2</td>
+            <td>Row 2, Cell 3</td>
+        </tr>
+    </table>
+
+    <!-- Nested Tables -->
+    <h2>Nested Tables</h2>
+    <table border="1px solid Black">
+        <caption>Table with Nested Tables</caption>
+        <tr>
+            <td>
+                Parent Table Cell
+                <table>
+                    <tr>
+                        <td>Nested Table Cell 1</td>
+                        <td>Nested Table Cell 2</td>
+                    </tr>
+                </table>
+            </td>
+            <td>Parent Table Cell</td>
+        </tr>
+    </table>
+
+</body>
+</html>
