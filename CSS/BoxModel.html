@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box Model</title>
+    <style>
+        /* Reset default margin, padding, and box-sizing for all elements */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Apply styles to the entire webpage body */
+        body {
+            margin: 0;
+            /* Reset body margin */
+            padding: 0;
+            /* Reset body padding */
+            background-color: rgb(240, 240, 240);
+            /* Set background color */
+        }
+
+        /* Styles for the blue box */
+        .box {
+            width: 300px;
+            /* Set the width of the box */
+            background-color: blue;
+            /* Set the background color of the box */
+            padding: 10px;
+            /* Add padding inside the box */
+            border: 2px solid black;
+            /* Add a border around the box */
+            margin: 10px;
+            /* Add margin around the box */
+            height: 100px;
+            /* Set the height of box */
+            overflow: auto;
+            /* it creates a scrollable area within that element if its content exceeds its dimensions.*/
+        }
+
+        /* Styles for the content inside the box */
+        .content {
+            background-color: sienna;
+            /* Set the background color of the content */
+            padding: 10px;
+            /* Add padding inside the content */
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Box Model</h1>
+    <!-- Create a div element with the class "box" -->
+    <div class="box">
+        <!-- Create a paragraph element with the class "content" inside the box -->
+        <p class="content">CSS (Cascading Style Sheets): CSS is a stylesheet language used to define the visual
+            presentation of web pages written in HTML or XML. It enables web developers to control
+            the layout, colors, fonts, and overall design of web content. CSS operates by selecting
+            HTML elements and applying styles to them, either inline or through external stylesheets.</p>
+    </div>
+</body>
+
+</html>

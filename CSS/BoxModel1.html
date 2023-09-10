@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box Model</title>
+    <style>
+        /* Apply styles to the entire webpage body */
+        body {
+            margin: 0; /* Reset body margin */
+            padding: 0; /* Reset body padding */
+            background-color: rgb(240, 240, 240); /* Set background color */
+        }
+
+        /* Styles for the blue box */
+        .box {
+            width: 300px; /* Set the width of the box */
+            background-color: blue; /* Set the background color of the box */
+            padding: 10px; /* Add padding inside the box */
+            border: 2px solid black; /* Add a border around the box */
+            margin: 10px; /* Add margin around the box */
+        }
+
+        /* Styles for the content inside the box */
+        .content {
+            background-color: sienna; /* Set the background color of the content */
+            padding: 10px; /* Add padding inside the content */
+        }
+
+    </style>
+</head>
+
+<body>
+    <h1>Box Model</h1>
+    <!-- Create a div element with the class "box" -->
+    <div class="box">
+        <!-- Create a paragraph element with the class "content" inside the box -->
+        <p class="content">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+    </div>
+</body>
+
+</html>
