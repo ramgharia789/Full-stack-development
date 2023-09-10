@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Relative and absolute positioning</title>
+    <style>
+        /* Resetting default styles for all elements */
+        * {
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+
+        /* Styling for the <p> elements */
+        p {
+            width: 50px;
+            height: 50px;
+            border: 1px solid black;
+            margin-bottom: 10px;
+            /* Creates space between <p> elements */
+        }
+
+        /* Styling for the container <div> */
+        div.container {
+            background-color: aliceblue;
+            position: relative;
+            /* Establishes a positioning context for child elements with absolute positioning */
+        }
+
+        /* Styling for specific <p> elements */
+
+        /* p1: Relative positioning, moved 60px down and 60px to the right */
+        p.p1 {
+            background-color: aquamarine;
+            position: relative;
+            top: 60px;
+            left: 60px;
+        }
+
+        /* p2: Normal positioning, follows the document flow */
+
+        /* p3: Absolute positioning, positioned at the top left corner of the container */
+        p.p3 {
+            background-color: green;
+            position: absolute;
+            /* If we declare 'position: absolute' without a parent div set to 'position: relative', 
+               it would be positioned relative to the root of the document. */
+            top: 0px;
+            left: 0px;
+        }
+
+        /* p4: Normal positioning, follows the document flow */
+    </style>
+</head>
+
+<body>
+    <h1>Relative and absolute positioning</h1>
+    <!-- The container <div> holds the <p> elements -->
+    <div class="container">
+        <!-- Four <p> elements with different styles -->
+        <p class="p1"></p> <!-- Relative positioning -->
+        <p class="p2"></p> <!-- Normal positioning -->
+        <p class="p3"></p> <!-- Absolute positioning -->
+        <p class="p4"></p> <!-- Normal positioning -->
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Floating Object</title>
+    <style>
+        /* Style for floated paragraphs */
+        p {
+            border: 2px solid;
+            /* Add a 2-pixel solid border to each paragraph */
+            float: left;
+            /* Float paragraphs to the left */
+            width: 50px;
+            /* Set a width of 50 pixels for each paragraph */
+            height: 50px;
+            /* Set a height of 50 pixels for each paragraph */
+            margin: 10px;
+            /* Add 10 pixels of margin around each paragraph */
+        }
+
+        /* Style for the container element */
+        #container {
+            background-color: brown;
+            /* Set the background color of the container to brown */
+        }
+
+        /* Style for the first floated paragraph */
+        .p1 {
+            background-color: violet;
+            /* Set a background color of violet */
+        }
+
+        /* Style for the second floated paragraph */
+        .p2 {
+            background-color: aquamarine;
+            /* Set a background color of aquamarine */
+        }
+
+        /* Style for the third floated paragraph */
+        .p3 {
+            background-color: antiquewhite;
+            /* Set a background color of antiquewhite */
+            clear: both;
+            /* Clear both left and right floats */
+        }
+
+        /* Style for the fourth floated paragraph */
+        .p4 {
+            background-color: azure;
+            /* Set a background color of azure */
+        }
+
+        /* Style for the non-floated section */
+        .p5 {
+            clear: left;
+            /* Clear left floats */
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Floating Object</h1>
+    <div id="container">
+
+        <!-- Create floated paragraphs with different background colors -->
+        <p class="p1"></p>
+        <p class="p2"></p>
+        <p class="p3"></p>
+        <p class="p4"></p>
+
+        <!-- Create a non-floated section with text -->
+        <section class="p5"> This Floating object topic program with CSS styling</section>
+    </div>
+</body>
+
+</html>
+F

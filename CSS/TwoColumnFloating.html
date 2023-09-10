@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Two Column Floating</title>
+    <style>
+        /* Global styles for all elements */
+        * {
+            box-sizing: border-box;
+        }
+
+        /* Styles for the heading */
+        h1 {
+            text-align: center;
+            /* Center the heading */
+            background-color: black;
+            color: white;
+            padding: 10px;
+        }
+
+        /* Styles for the columns */
+        p {
+            width: 50%;
+            float: left;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            padding: 20px;
+            /* Increased padding for better readability */
+            /* color: white; */
+            /* Text color */
+        }
+
+        /* Clear the floats after the columns */
+        .container::after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+    </style>    
+</head>
+
+<body>
+    <h1>Two column floating</h1>
+    <div class="container">
+        <p class="p1">
+            <!-- Explanation of the first column's content -->
+            CSS (Cascading Style Sheets): CSS is a stylesheet language used to define the visual
+            presentation of web pages written in HTML or XML. It enables web developers to control
+            the layout, colors, fonts, and overall design of web content. CSS operates by selecting
+            HTML elements and applying styles to them, either inline or through external stylesheets.
+        </p>
+        <p class="p2">
+            <!-- Explanation of the second column's content -->
+            Front-End Development:
+
+            HTML/CSS: Learn HTML for structuring web content and CSS for styling.
+            JavaScript: Master JavaScript for client-side scripting, DOM manipulation, and asynchronous programming.
+            Front-End Frameworks: Familiarize yourself with popular front-end frameworks like React, Angular, or Vue.js.
+
+            Back-End Development:
+
+            Java Web Frameworks: Study Java web frameworks like Spring and Spring Boot for building robust back-end
+            applications.
+            Database Management: Learn how to work with databases using SQL and NoSQL databases like MySQL, PostgreSQL,
+            MongoDB, or Cassandra.
+            RESTful APIs: Understand how to design and implement RESTful APIs for communication between the front-end
+            and back-end.
+        </p>
+    </div>
+</body>
+
+</html>
